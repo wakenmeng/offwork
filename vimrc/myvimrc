@@ -1,0 +1,42 @@
+"Copyright 2015 Meng Weikang, all rights reserved. 
+
+"show line number and set the show colum width 4
+set number
+set numberwidth=4
+"auto wrap when a line out of window, not actually in buffer
+set wrap
+"auto shift indent to multiple of 'shiftwidth', use <, > to shift.
+set shiftround
+"set shiftwidth=4
+"
+"map imap nmap vmap
+inoremap <c-u> <esc>viwUea
+nnoremap <c-u> viwUe
+
+"add " for a word
+nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+"add ' for a word in v mode
+vnoremap <leader>' <esc>`<i'<esc>`>a'<esc>
+
+"L to the end of line 
+nnoremap L $
+
+"remove mappings
+"unmap nunmap iunmap vunmap
+"noremap (no recursion map) unoremap nnoremap vnoremap inoremap
+
+"set <leader>
+let mapleader = ','
+"set <localleader>
+let maplocalleader = '\\'
+"edit .vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+
+"set abbreviation only for insert, replace and command mode
+"can auto spelling fix, non-keywords character followed will trigger the replace.
+"abbrev iabbrev
+iabbrev adn and
+iabbrev hte the
+"or shortfor sth
+iabbrev @@ wakenmeng@gmail.com
+iabbrev ccopy Copyright 2015 Meng Weikang, all rights reserved.
