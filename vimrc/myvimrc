@@ -38,5 +38,6 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 iabbrev adn and
 iabbrev hte the
 "or shortfor sth
+iabbrev pycoding # -*- coding: utf-8 -*-
 iabbrev @@ wakenmeng@gmail.com
 iabbrev ccopy Copyright 2015 Meng Weikang, all rights reserved.
